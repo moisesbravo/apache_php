@@ -4,7 +4,7 @@ class apache_php {
 
   package { "apache2":
     ensure  => installed,
-    require => Class["system-update"],
+    require => Class["system_update"],
   }
 
   service { "apache2":
